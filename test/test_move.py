@@ -3,7 +3,7 @@ import unittest
 from pokelife.move import Move
 
 
-class TestPokeAPIConnect(unittest.TestCase):
+class TestMove(unittest.TestCase):
     def test_move_init(self):
         move = Move(1)
         self.assertEqual(move.name, 'pound')
