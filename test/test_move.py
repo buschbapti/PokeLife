@@ -8,4 +8,6 @@ class TestPokeAPIConnect(unittest.TestCase):
         move = Move(1)
         self.assertEqual(move.name, 'pound')
         self.assertEqual(move.crit_rate, 0)
+        self.assertEqual(move.type, 'normal')
+        self.assertEqual(move.damage_class, 'physical')
         self.assertEqual(move.ailment, 'none')
