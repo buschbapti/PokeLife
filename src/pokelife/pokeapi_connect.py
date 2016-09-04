@@ -17,5 +17,17 @@ class PokeAPIConnect(object):
     def get_pokemon(self, id_pokemon):
         return self._get_data('pokemon/{}'.format(id_pokemon))
 
+    def get_number_of_pokemons(self):
+        return self._get_data('pokemon')['count']
+
     def get_move(self, id_move):
         return self._get_data('move/{}'.format(id_move))
+
+    def get_number_of_moves(self):
+        return self._get_data('move')['count']
+
+    def get_nature(self, id_nature):
+        return self._get_data('nature/{}'.format(id_nature))
+
+    def get_number_of_natures(self):
+        return self._get_data('nature')['count']
