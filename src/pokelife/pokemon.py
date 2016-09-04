@@ -62,7 +62,7 @@ class Pokemon(object):
         self.__moves = move_pool
 
     def set_move_at_index(self, move_number, id_move):
-        assert move_number <= 0 or move_number > 4, "The choosen move index should be between 0 and 3"
+        assert move_number >= 0 or move_number > 4, "The choosen move index should be between 0 and 3"
         # set the list of four active moves
         move = Move(id_move)
         assert move.name in self.available_moves, "%r is not in the list of available moves" % move
